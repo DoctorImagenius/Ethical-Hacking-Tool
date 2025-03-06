@@ -1,0 +1,4 @@
+1 = Make rubberDuckyCode.txt
+2 = Download tor and extract and paste it in this directory
+3 = Download arduino and save here and run this command ./arduino-ide_2.3.4_Linux_64bit.AppImage
+4 = Download httrack and sherlock by apt install pkg and also git clone https://github.com/Rog3rSm1th/Profil3r.git

