@@ -26,7 +26,7 @@ It also integrates with advanced cybersecurity tools, including:
 
                         🚀 Installation & Setup
 
-  git clone https://github.com/DoctorImagenius/RedHatHackerImagenius.git
+  https://github.com/DoctorImagenius/Ethical-Hacking-Tool.git
   cd RedHatHackerImagenius
   python3 RedHatHackerImagenius.py
 
